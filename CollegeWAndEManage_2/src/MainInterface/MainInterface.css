@@ -1,0 +1,66 @@
+.button {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #2b579a;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0 0px 0px 0;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 15px;
+}
+
+.button:hover {
+    -fx-background-color: #124078;
+}
+
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, #a3bde3, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color: White ;
+    -fx-text-fill: Black ;
+    -fx-font-family: "Microsoft YaHei UI" ;
+}
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: White ;
+    -fx-background-color: #2b579a ;
+}
+
+.text-field:focused {
+    -fx-border-color: #a3bde3;
+    -fx-border-radius: 0px;
+}
+
+.table-view {
+    -fx-border-color: #a3bde3;
+    -fx-border-radius: 0px;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 13px;
+}
+.table-view.row-selected {
+    -fx-background-color: #2b579a;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #FFFFFF;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #f2f2f2;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2b579a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.label {
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 13px;
+}

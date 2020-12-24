@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="280.0" prefWidth="420.0" style="-fx-background-color: FFFFFF;" stylesheets="@../MainInterface.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainInterface.Login.LoginController">
+   <children>
+      <Label layoutX="40.0" layoutY="128.0" text="用户名：" />
+      <Label layoutX="41.0" layoutY="167.0" text="密   码：" />
+      <Label layoutX="31.0" layoutY="81.0" text="用户类别：" />
+      <TextField layoutX="121.0" layoutY="122.0" text="admin" />
+      <PasswordField layoutX="121.0" layoutY="161.0" text="admin" />
+      <Button fx:id="button_login" layoutX="85.0" layoutY="221.0" mnemonicParsing="false" onAction="#toOpenMain" prefHeight="36.0" prefWidth="120.0" text="登录" />
+      <Button layoutX="235.0" layoutY="221.0" mnemonicParsing="false" onAction="#toExit" prefHeight="36.0" prefWidth="120.0" text="退出" />
+      <Label layoutX="14.0" layoutY="9.0" prefHeight="72.0" prefWidth="150.0" text="请登录！">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" layoutX="121.0" layoutY="75.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

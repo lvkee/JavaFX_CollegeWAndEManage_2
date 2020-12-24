@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../MainInterface.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainInterface.SearchInfo.SearchInfoController">
+   <children>
+      <Label layoutX="14.0" layoutY="34.0" text="*姓名：" />
+      <TextField fx:id="label_name" layoutX="60.0" layoutY="28.0" prefHeight="36.0" prefWidth="85.0" />
+      <Label layoutX="154.0" layoutY="14.0" text="用水量 ≥ " />
+      <Label layoutX="154.0" layoutY="46.0" text="用电量 ≥ " />
+      <Label layoutX="14.0" layoutY="77.0" prefHeight="42.0" prefWidth="195.0" text="*为必填项" />
+      <TextField fx:id="label_waterC" layoutX="224.0" layoutY="10.0" prefHeight="20.0" prefWidth="85.0" />
+      <TextField fx:id="label_eC" layoutX="224.0" layoutY="46.0" prefHeight="20.0" prefWidth="85.0" />
+      <Button layoutX="112.0" layoutY="80.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="36.0" prefWidth="85.0" text="查找" />
+      <Button fx:id="button_exit" layoutX="209.0" layoutY="80.0" mnemonicParsing="false" onMouseClicked="#toExit" prefHeight="36.0" prefWidth="85.0" text="关闭" />
+      <Label layoutX="14.0" layoutY="127.0" text="查找结果：" />
+      <Label layoutX="18.0" layoutY="157.0" text="学号：" />
+      <Label layoutX="18.0" layoutY="183.0" text="姓名：" />
+      <Label layoutX="18.0" layoutY="215.0" text="性别：" />
+      <Label layoutX="18.0" layoutY="247.0" text="年龄：" />
+      <Label layoutX="18.0" layoutY="279.0" text="班级：" />
+      <Label layoutX="9.0" layoutY="311.0" text="用水量：" />
+      <Label layoutX="18.0" layoutY="375.0" text="水费：" />
+      <Label layoutX="18.0" layoutY="407.0" text="电费：" />
+      <Label layoutX="6.0" layoutY="445.0" text="是否已缴纳：" />
+      <TextField fx:id="textField_Id" layoutX="70.0" layoutY="151.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_Name" layoutX="70.0" layoutY="183.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_Sex" layoutX="70.0" layoutY="215.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_Age" layoutX="70.0" layoutY="247.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_Class" layoutX="70.0" layoutY="279.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_WaterC" layoutX="70.0" layoutY="311.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_EC" layoutX="70.0" layoutY="343.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_WaterCost" layoutX="70.0" layoutY="375.0" prefHeight="30.0" prefWidth="230.0" />
+      <TextField fx:id="textField_ECost" layoutX="70.0" layoutY="407.0" prefHeight="30.0" prefWidth="230.0" />
+      <Label layoutX="9.0" layoutY="343.0" text="用电量：" />
+      <TextField fx:id="textField_IsPay" layoutX="103.0" layoutY="439.0" prefHeight="30.0" prefWidth="189.0" />
+      <Button layoutX="36.0" layoutY="491.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="30.0" prefWidth="72.0" text="修改" />
+      <Button layoutX="157.0" layoutY="491.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="30.0" prefWidth="72.0" text="删除" />
+   </children>
+</Pane>

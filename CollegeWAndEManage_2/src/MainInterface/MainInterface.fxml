@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="909.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../MainInterface/MainInterface.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainInterface.MainInterfaceController">
+   <children>
+      <TableView fx:id="tblMainList" cache="true" editable="true" layoutX="196.0" layoutY="52.0" onMouseClicked="#toActiveButton_Delete" prefHeight="457.0" prefWidth="727.0">
+         <columns>
+            <TableColumn fx:id="col_num" onEditCommit="#toEditNum" prefWidth="100.0" resizable="false" text="学号（职工号）" />
+            <TableColumn fx:id="col_name" onEditCommit="#toEditName" prefWidth="70.0" resizable="false" sortable="false" text="姓名" />
+            <TableColumn fx:id="col_sex" onEditCommit="#toEditSex" prefWidth="50.0" resizable="false" sortable="false" text="性别" />
+            <TableColumn fx:id="col_age" onEditCommit="#toEditAge" prefWidth="50.0" resizable="false" sortable="false" text="年龄" />
+            <TableColumn fx:id="col_class" onEditCommit="#toEditClass" prefWidth="110.0" resizable="false" sortable="false" text="班级（工作部门）" />
+            <TableColumn fx:id="col_wConsume" onEditCommit="#toEditWConsume" prefWidth="65.0" resizable="false" sortable="false" text="用水量" />
+            <TableColumn fx:id="col_eConsume" onEditCommit="#toEditEConsume" prefWidth="65.0" resizable="false" sortable="false" text="用电量" />
+            <TableColumn fx:id="col_wCost" onEditCommit="#toEditWCost" prefWidth="65.0" resizable="false" sortable="false" text="水费" />
+            <TableColumn fx:id="col_eCost" onEditCommit="#toEditECost" prefWidth="65.0" resizable="false" sortable="false" text="电费" />
+            <TableColumn fx:id="col_isPay" onEditCommit="#toEditIsPay" prefWidth="90.0" resizable="false" sortable="false" text="是否已缴纳" />
+         </columns>
+      </TableView>
+      <Label fx:id="label_prompt" alignment="TOP_LEFT" layoutX="267.0" layoutY="6.0" prefHeight="98.0" prefWidth="508.0" visible="false" wrapText="true">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="509.0" prefWidth="196.0" style="-fx-background-color: #2b579a;">
+         <children>
+            <Button layoutX="-4.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#toLoad" prefHeight="57.0" prefWidth="200.0" text="读取本地文件">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Line endX="80.0" layoutX="101.0" layoutY="117.0" startX="-80.0" stroke="#7da3c6" />
+            <Button layoutX="-4.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#toSave" prefHeight="57.0" prefWidth="200.0" text="保存至本地">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_add" layoutX="-4.0" layoutY="52.0" mnemonicParsing="false" onAction="#toAddPerson" prefHeight="57.0" prefWidth="200.0" text="添加">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="-4.0" layoutY="290.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="57.0" prefWidth="200.0" text="查询">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="-4.0" layoutY="120.0" mnemonicParsing="false" onAction="#openTables" prefHeight="57.0" prefWidth="200.0" text="刷新">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_Edit" layoutX="-4.0" layoutY="345.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="57.0" prefWidth="200.0" text="保留修改">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_Delete" layoutX="-4.0" layoutY="400.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="57.0" prefWidth="200.0" text="删除选中">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="-4.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#toStatistic" prefHeight="57.0" prefWidth="200.0" text="统计" />
+         </children>
+      </Pane>
+      <Label fx:id="label_Status" layoutX="205.0" layoutY="6.0" prefHeight="47.0" prefWidth="508.0" text="当前状态：" />
+      <Label fx:id="dateTime" layoutX="702.0" layoutY="6.0" prefHeight="47.0" prefWidth="207.0" text="Label" />
+   </children>
+</Pane>
